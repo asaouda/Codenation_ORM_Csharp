@@ -10,4 +10,4 @@ Results File: C:\Users\aline\codenation\csharp-7\Source.TestSubmission\results.x
 Execu‡Æo de Teste Bem-sucedida.
 Total de testes: 52
      Aprovados: 52
-Tempo total: 2,6793 Segundos
+Tempo total: 2,7420 Segundos

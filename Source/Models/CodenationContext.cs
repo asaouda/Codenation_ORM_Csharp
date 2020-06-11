@@ -8,7 +8,6 @@ namespace Codenation.Challenge.Models
         public DbSet<Company> Companies { get; set; }
         public DbSet<User> Users { get; set; }
         public DbSet<Challenge> Challenges { get; set; }
-
         public DbSet<Acceleration> Accelerations { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -23,13 +22,13 @@ namespace Codenation.Challenge.Models
         {
             modelBuilder.Entity<Submission>()
                         .ToTable("submission")
-                        .HasKey(c => new { c.ChallengeId, c.UserId});
-                        
+                        .HasKey(c => new { c.ChallengeId, c.UserId });
+
             base.OnModelCreating(modelBuilder);
 
             modelBuilder.Entity<Candidate>()
                         .ToTable("candidate")
-                        .HasKey(c => new { c.CompanyId, c.UserId,c.AccelerationId });
+                        .HasKey(c => new { c.CompanyId, c.UserId, c.AccelerationId });
 
             base.OnModelCreating(modelBuilder);
 

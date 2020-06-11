@@ -10,10 +10,10 @@ namespace Codenation.Challenge.Models
     [Table("candidate")]
     public class Candidate
     {
-        [Column("status", TypeName = "int"),Required]
+        [Column("status", TypeName = "int"), Required]
         public int Status { get; set; }
 
-        [Column("created_at", TypeName = "timestamp"),Required]
+        [Column("created_at", TypeName = "timestamp"), Required]
         public DateTime CreatedAt { get; set; }
 
         [ForeignKey("userid")]

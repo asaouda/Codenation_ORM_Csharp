@@ -10,10 +10,10 @@ namespace Codenation.Challenge.Models
     [Table("submission")]
     public class Submission
     {
-        [Column("score", TypeName = "decimal(9,2)"),Required]
+        [Column("score", TypeName = "decimal(9,2)"), Required]
         public decimal Score { get; set; }
 
-        [Column("created_at", TypeName = "timestamp"),Required]
+        [Column("created_at", TypeName = "timestamp"), Required]
         public DateTime CreatedAt { get; set; }
 
         [ForeignKey("userid")]
