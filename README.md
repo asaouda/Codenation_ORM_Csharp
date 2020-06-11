@@ -1,5 +1,7 @@
 # ORM .Net
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/9a54def7cb9642eab539c5b989f211b7)](https://app.codacy.com/manual/asaouda/Codenation_ORM_Csharp?utm_source=github.com&utm_medium=referral&utm_content=asaouda/Codenation_ORM_Csharp&utm_campaign=Badge_Grade_Settings)
+
 O ORM padrão do .NET Core chama Entity Framework Core (EF). Existem basicamente 4 modos de trabalhar com o EF:
 
 - O modo **model-first**, em que o programador desenha um modelo EDM com as ferramentas do Visual Studio e depois gera o banco de dados e as classes. 
