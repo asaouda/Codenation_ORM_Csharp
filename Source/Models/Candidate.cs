@@ -10,34 +10,25 @@ namespace Codenation.Challenge.Models
     [Table("candidate")]
     public class Candidate
     {
-        [Column("user_id")]
-        [Required]
-        public int User_Id { get; set; }
-        [Required]
-        [ForeignKey("userid")]
-        public User User { get; set; }
-
-        [Column("acceleration_id")]
-        [Required]
-        public int Acceleration_Id { get; set; }
-        [Required]
-        [ForeignKey("accelerationid")]
-        public Acceleration Acceleration { get; set; }
-
-        [Column("company_id")]
-        [Required]
-        public int Company_Id { get; set; }
-        [Required]
-        [ForeignKey("companyid")]
-        public Company Company { get; set; }
-
-        [Column("status", TypeName = "int")]
-        [Required]
+        [Column("status", TypeName = "int"),Required]
         public int Status { get; set; }
 
-        [Column("created_at", TypeName = "timestamp")]
-        [Required]
-        public DateTime Created_At { get; set; }
+        [Column("created_at", TypeName = "timestamp"),Required]
+        public DateTime CreatedAt { get; set; }
 
+        [ForeignKey("userid")]
+        [Column("user_id"), Required]
+        public int UserId { get; set; }
+        public User User { get; set; }
+
+        [ForeignKey("accelerationid")]
+        [Column("acceleration_id"), Required]
+        public int AccelerationId { get; set; }
+        public Acceleration Acceleration { get; set; }
+
+        [ForeignKey("companyid")]
+        [Column("company_id"), Required]
+        public int CompanyId { get; set; }
+        public Company Company { get; set; }
     }
 }
