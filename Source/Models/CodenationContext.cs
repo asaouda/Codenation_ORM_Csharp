@@ -26,6 +26,7 @@ namespace Codenation.Challenge.Models
 
             base.OnModelCreating(modelBuilder);
 
+
             modelBuilder.Entity<Candidate>()
                         .ToTable("candidate")
                         .HasKey(c => new { c.CompanyId, c.UserId, c.AccelerationId });
