@@ -14,15 +14,14 @@ namespace Codenation.Challenge.Models
         [Column("user_id")]
         [Required]
         public int User_Id { get; set; }
-        [Required]
-        [ForeignKey("user_id")]
+        [ForeignKey("userid")]
         public User User { get; set; }
 
         [Column("challenge_id")]
         [Required]
         public int Challenge_Id { get; set; }
-        [Required]
-        [ForeignKey("challenge_id")]
+        
+        [ForeignKey("challengeid")]
         public Challenge Challenge { get; set; }
 
         [Column("score", TypeName = "decimal(9,2)")]

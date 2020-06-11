@@ -35,10 +35,8 @@ namespace Codenation.Challenge.Models
         [Required]
         public int Challenge_Id { get; set; }
         [Required]
-        [ForeignKey("challenge_id")]
+        [ForeignKey("challengeid")]
         public Challenge Challenge { get; set; }
-
-
         public ICollection<Candidate> Candidates { get; set; }
     }
 }

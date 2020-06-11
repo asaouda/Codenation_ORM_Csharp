@@ -14,21 +14,21 @@ namespace Codenation.Challenge.Models
         [Required]
         public int User_Id { get; set; }
         [Required]
-        [ForeignKey("user_id")]
+        [ForeignKey("userid")]
         public User User { get; set; }
 
         [Column("acceleration_id")]
         [Required]
         public int Acceleration_Id { get; set; }
         [Required]
-        [ForeignKey("acceleration_id")]
+        [ForeignKey("accelerationid")]
         public Acceleration Acceleration { get; set; }
 
         [Column("company_id")]
         [Required]
         public int Company_Id { get; set; }
         [Required]
-        [ForeignKey("company_id")]
+        [ForeignKey("companyid")]
         public Company Company { get; set; }
 
         [Column("status", TypeName = "int")]
